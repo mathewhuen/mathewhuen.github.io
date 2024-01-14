@@ -1,23 +1,38 @@
 ---
 ---
 
-
-@inproceedings{huerta2022kosign,
-  title={Kosign sign language translation project: Introducing the niasl2021 dataset},
-  author={Huerta-Enochian, Mathew and Lee, Du Hui and Myung, Hye Jin and Byun, Kang Suk and Lee, Jun Woo},
-  booktitle={Proceedings of the 7th International Workshop on Sign Language Translation and Avatar Technology: The Junction of the Visual and the Textual: Challenges and Perspectives},
-  pages={59--66},
-  year={2022}
+@unpublished{huerta2024prompt,
+  title={[Preprint] Prompt Weight Experiments for LLM Instruction Fine-Tuning},
+  author={Huerta-Enochian, Mathew},
+  institution={EQ4ALL},
+  booktitle={Preprint},
+  pdf={huerta2024prompt.pdf},
+  abstract={We present a small study analyzing how weighting prompt token classification loss affects the performance of 7B-size LLaMA models fine-tuned on instruction tasks. We recreated Stanford's Alpaca experiment with both LLaMA 1 and LLaMA 2 using multiple instruction datasets. We found that models fine-tuned on our short-completion dataset benefited most from a small prompt loss weight of ~ 0.1 during training while models fine-tuned on long-completion datasets was unaffected by prompt loss weight.},
+  year={2024}
 }
 
+@inproceedings{kim2023astudy,
+  title={A Study on Korean to Korean Sign Language Translation using Large Language Models},
+  author={Kim, Jung-Ho and Ko, Changyong and Huerta-Enochian, Mathew and Lee, Jongcheon and Lee, Du Hui},
+  booktitle={Korea Artificial Intelligence Conference},
+  year={2023}
+}
 
 @inproceedings{huerta2023sign,
   title={Sign Language Avatar Animation Search: An Ani2Ani Search Application},
   author={Huerta-Enochian, Mathew and Ko, Changyong},
+  abstract={To improve sign language animation asset management, we developed a general animation search system supporting multiple input modalities. The system reads animations as pose sequences, embeds them into fixed-length representation vectors using engineered or learned features, and scores animation similarity using distance in the embedding space. We present an overview of the system, use-case scenarios, and feedback from deaf users.},
   booktitle={2023 IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW)},
   pages={1--5},
   year={2023},
   organization={IEEE}
 }
 
-
+@inproceedings{huerta2022kosign,
+  title={Kosign sign language translation project: Introducing the niasl2021 dataset},
+  author={Huerta-Enochian, Mathew and Lee, Du Hui and Myung, Hye Jin and Byun, Kang Suk and Lee, Jun Woo},
+  abstract={We introduce a new sign language production (SLP) and sign language translation (SLT) dataset, NIASL2021, consisting of 201,026 Korean-KSL data pairs. KSL translations of Korean source texts are represented in three formats: video recordings, keypoint position data, and time-aligned gloss annotations for each hand (using a 7,989 sign vocabulary) and for eight different non-manual signals (NMS). We evaluated our sign language elicitation methodology and found that text-based prompting had a negative effect on translation quality in terms of naturalness and comprehension. We recommend distilling text into a visual medium before translating into sign language or adding a prompt-blind review step to text-based translation methodologies},
+  booktitle={Proceedings of the 7th International Workshop on Sign Language Translation and Avatar Technology: The Junction of the Visual and the Textual: Challenges and Perspectives},
+  pages={59--66},
+  year={2022}
+}
