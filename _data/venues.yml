@@ -8,3 +8,15 @@
 "SLTAT":
   url: http://sltat.cs.depaul.edu/
   color: "#0542a3"
+
+"LREC-COLING":
+  url: https://lrec-coling-2024.org/
+  color: "#3e8bc5"
+
+"SignLang":
+  url: https://www.sign-lang.uni-hamburg.de/lrec/
+  color: "#a5040b"
+
+"KAIC":
+  url: https://koreaai.org/
+  color: "#79383c"

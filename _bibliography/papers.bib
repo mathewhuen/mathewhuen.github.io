@@ -2,30 +2,52 @@
 ---
 
 @unpublished{huerta2024prompt,
-  title={Prompt Weight Experiments for LLM Instruction Fine-Tuning},
+  title={Instruction Fine-Tuning: Does Prompt Loss Matter?},
   author={Huerta-Enochian, Mathew},
   institution={EQ4ALL},
   abbr={Preprint},
   booktitle={Preprint},
-  abstract={We present a small study analyzing how prompt token classification loss weighting (PLW) affects the performance of 7B-size LLaMA models fine-tuned on instruction tasks. We recreated Stanford's Alpaca experiment with both LLaMA 1 and LLaMA 2 using multiple instruction datasets. We found that models fine-tuned on our short-completion dataset have a negative quadratic relationship with PLW while models fine-tuned on long-completion datasets were unaffected by PLW.},
+  abstract={We present a study analyzing the effects of prompt loss weighting (PLW) on supervised instruction fine-tuning. We recreated Stanford's Alpaca experiment with both LLaMA 1 and LLaMA 2 and multiple instruction datasets. We found that performance of models fine-tuned on our short-completion dataset had a statistically significant negative quadratic relationship with PLW, but performance of models fine-tuned on medium- and long-completion data did not show any relationship with PLW. I.e., prompt loss can be safely ignored for many datasets. For short-completion data, small values (0.01-0.1) of PLW were optimal for multiple-choice and short-generation tasks while large values (~ 1.0) of PLW were optimal for long-generation tasks. We concluded that low non-zero PLW encourages models to not diverge from pre-trained model weights during training and high PLW reduces overfitting. Finally, we present a rough guide for selecting PLW values based on the completion-prompt length ratio of fine-tuning data.},
   arxiv={2401.13586},
   year={2024}
 }
 
-@unpublished{kim2024signbleu,
-  title={SignBLEU: Automatic Evaluation of Multi-Channel Sign Language Translation},
-  author={Kim*, Jung-Ho and Huerta-Enochian*, Mathew and Ko, Changyong and Lee, Du Hui},
-  institution={EQ4ALL},
-  abbr={LREC-COLING},
-  abstract={Sign language is a multi-channel language, communicating information through not just the hands (manual signals) but also facial expressions and upper body movements (non-manual signals). However, since automatic sign language translation is usually performed by generating a single sequence of glosses, researchers eschew non-manual and co-occurring manual signals in favor of a simplified list of manual glosses. This can lead to significant information loss and ambiguity. In this paper, we formally introduce a new task named multi-channel sign language translation (MCSLT) and present a novel metric, SignBLEU, designed to capture multiple signal channels. We validated SignBLEU on a system-level task using three sign language corpora with varied linguistic structures and transcription methodologies and examined its correlation with human judgment through two segment-level tasks. We found that SignBLEU consistently correlates better with human judgment than competing metrics. To facilitate further MCSLT research, we report benchmark scores for the three sign language corpora and release the source code for SignBLEU.},
+@inproceedings{kim2024shedding,
+  title={Shedding Light on the Underexplored: Tackling the Minor Sign Language Research Topics},
+  author={Kim, Jung-Ho and Ko, Changyong and Huerta-Enochian, Mathew and Ko, Seung Yong},
+  abbr={SignLang},
+  pages={240--251},
+  booktitle={Proceedings of the {LREC-COLING} 2024 11th Workshop on the Representation and Processing of Sign Languages: Evaluation of Sign Language Resources},
+  maintitle={2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation ({LREC-COLING} 2024)},
+  abstract={In the past decade, sign language research has achieved remarkable results alongside the advancements in deep learning. However, there is a disconnect between the outcomes of these research efforts and the actual use of sign language by signers. In this position paper, we reviewed sign language papers related to deep learning published in the last ten years to explore reasons for this gap. We found many areas of research that are still underdeveloped, despite their linguistic importance. Based on an analysis of known corpora and methodologies, we identified the reasons for the lack of progress in these areas and propose directions for future research efforts.},
+  publisher={{ELRA Language Resources Association (ELRA) and the International Committee on Computational Linguistics (ICCL)}},
+  address={Torino, Italy},
+  day={25},
+  month={may},
   year={2024},
-  organization={LC},
-  note={Accepted}
+  isbn={978-2-493814-30-2},
+  language={english},
+  url={https://www.sign-lang.uni-hamburg.de/lrec/pub/24028.pdf}
+}
+
+@inproceedings{kim2024signbleu,
+  title={{S}ign{BLEU}: Automatic Evaluation of Multi-channel Sign Language Translation},
+  author={Kim*, Jung-Ho  and  Huerta-Enochian*, Mathew John  and  Ko, Changyong  and  Lee, Du Hui},
+  abbr={LREC-COLING},
+  year={2024},
+  month={may},
+  booktitle={Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)},
+  publisher={ELRA and ICCL},
+  address={Torino, Italy},
+  pages={14796--14811},
+  url={https://aclanthology.org/2024.lrec-main.1289},
+  abstract={Sign languages are multi-channel languages that communicate information through not just the hands (manual signals) but also facial expressions and upper body movements (non-manual signals). However, since automatic sign language translation is usually performed by generating a single sequence of glosses, researchers eschew non-manual and co-occurring manual signals in favor of a simplified list of manual glosses. This can lead to significant information loss and ambiguity. In this paper, we introduce a new task named multi-channel sign language translation (MCSLT) and present a novel metric, SignBLEU, designed to capture multiple signal channels. We validated SignBLEU on a system-level task using three sign language corpora with varied linguistic structures and transcription methodologies and examined its correlation with human judgment through two segment-level tasks. We found that SignBLEU consistently correlates better with human judgment than competing metrics. To facilitate further MCSLT research, we report benchmark scores for the three sign language corpora and release the source code for SignBLEU at https://github.com/eq4all-projects/SignBLEU.}
 }
 
 @inproceedings{kim2023astudy,
   title={A Study on Korean to Korean Sign Language Translation using Large Language Models},
   author={Kim, Jung-Ho and Ko, Changyong and Huerta-Enochian, Mathew and Lee, Jongcheon and Lee, Du Hui},
+  abbr={KAIC},
   booktitle={Korea Artificial Intelligence Conference},
   year={2023}
 }
