@@ -16,7 +16,6 @@ profile:
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
-
 ---
 
 I work on machine translation between Korean and Korean Sign Language at [EQ4ALL](https://www.eq4all.co.kr) in Seoul, South Korea.
@@ -27,9 +26,10 @@ This means interviewing domain experts and users, selecting meaningful features,
 I value drawing from known relationships for feature engineering or expressing them as as mathematical models to inform our model.
 
 My current research interests are:
- * Machine Translation
- * Pose and Gesture Modeling
- * Dynamical Systems
- * Multi-Task Grounding for Language-Capable Agents
+
+- Machine Translation
+- Pose and Gesture Modeling
+- Dynamical Systems
+- Multi-Task Grounding for Language-Capable Agents
 
 If you have similar research interests, let me know! I would love to collaborate.
