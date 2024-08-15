@@ -3,11 +3,11 @@
 
 @unpublished{huerta2024prompt,
   title={Instruction Fine-Tuning: Does Prompt Loss Matter?},
-  author={Huerta-Enochian, Mathew},
+  author={Huerta-Enochian, Mathew and Ko, Seung Yong},
   institution={EQ4ALL},
   abbr={Preprint},
   booktitle={Preprint},
-  abstract={We present a study analyzing the effects of prompt loss weighting (PLW) on supervised instruction fine-tuning. We recreated Stanford's Alpaca experiment with both LLaMA 1 and LLaMA 2 and multiple instruction datasets. We found that performance of models fine-tuned on our short-completion dataset had a statistically significant negative quadratic relationship with PLW, but performance of models fine-tuned on medium- and long-completion data did not show any relationship with PLW. I.e., prompt loss can be safely ignored for many datasets. For short-completion data, small values (0.01-0.1) of PLW were optimal for multiple-choice and short-generation tasks while large values (~ 1.0) of PLW were optimal for long-generation tasks. We concluded that low non-zero PLW encourages models to not diverge from pre-trained model weights during training and high PLW reduces overfitting. Finally, we present a rough guide for selecting PLW values based on the completion-prompt length ratio of fine-tuning data.},
+  abstract={We present a novel study analyzing the effects of various prompt loss token weights (PLW) for supervised instruction fine-tuning (SIFT). While prompt-masking (PLW = 0) is common for SIFT, some fine-tuning APIs support fractional PLWs and suggest that using a small non-zero PLW can help stabilize learning when fine-tuning on short-completion data. However, there has never been a study confirming this claim, and OpenAI, a major cloud-based SIFT provider, recently removed this parameter from their fine-tuning API. We found that performance of models fine-tuned on short-completion data had a statistically-significant negative quadratic relationship with PLW. Using small values (0.01 - 0.5) of PLW produced better results on multiple-choice and short-generation benchmarks (outperforming models fine-tuned on long-completion data) while large values (~ 1.0) of PLW produced better results on long-generation benchmarks. We explained this effect and verified its importance through additional experiments. This research serves as a warning to API providers about the importance of providing a PLW parameter for SIFT.},
   arxiv={2401.13586},
   year={2024}
 }
@@ -27,7 +27,7 @@
   year={2024},
   isbn={978-2-493814-30-2},
   language={english},
-  url={https://www.sign-lang.uni-hamburg.de/lrec/pub/24028.pdf}
+  website={https://www.sign-lang.uni-hamburg.de/lrec/pub/24028.pdf}
 }
 
 @inproceedings{kim2024signbleu,
@@ -40,7 +40,7 @@
   publisher={ELRA and ICCL},
   address={Torino, Italy},
   pages={14796--14811},
-  url={https://aclanthology.org/2024.lrec-main.1289},
+  website={https://aclanthology.org/2024.lrec-main.1289},
   abstract={Sign languages are multi-channel languages that communicate information through not just the hands (manual signals) but also facial expressions and upper body movements (non-manual signals). However, since automatic sign language translation is usually performed by generating a single sequence of glosses, researchers eschew non-manual and co-occurring manual signals in favor of a simplified list of manual glosses. This can lead to significant information loss and ambiguity. In this paper, we introduce a new task named multi-channel sign language translation (MCSLT) and present a novel metric, SignBLEU, designed to capture multiple signal channels. We validated SignBLEU on a system-level task using three sign language corpora with varied linguistic structures and transcription methodologies and examined its correlation with human judgment through two segment-level tasks. We found that SignBLEU consistently correlates better with human judgment than competing metrics. To facilitate further MCSLT research, we report benchmark scores for the three sign language corpora and release the source code for SignBLEU at https://github.com/eq4all-projects/SignBLEU.}
 }
 
@@ -72,5 +72,6 @@
   booktitle={Proceedings of the 7th International Workshop on Sign Language Translation and Avatar Technology: The Junction of the Visual and the Textual: Challenges and Perspectives},
   pages={59--66},
   year={2022},
+  website={https://aclanthology.org/2022.sltat-1.9/},
   poster={huerta2022kosign_poster.pdf}
 }
