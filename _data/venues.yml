@@ -20,3 +20,7 @@
 "KAIC":
   url: https://koreaai.org/
   color: "#79383c"
+
+"EMNLP":
+  url: https://2024.emnlp.org/
+  color: "#C60900"
