@@ -22,6 +22,6 @@ I am currently a graduate student in Computer Science at the [University of Oreg
 
 I previously worked on machine translation between Korean and Korean Sign Language at [EQ4ALL](https://www.eq4all.co.kr) in Seoul, South Korea, where I led R&D for automatic translation, collaborated with native signers to guide and validate our work, and worked on reducing bias in data collection and model validation.
 
-I am currently working on several small projects related to model validation and error-corrected correlation.
+I am currently working on several projects related to model validation and flow matching for SciML.
 
 If you have similar research interests, let me know! I would love to collaborate.
